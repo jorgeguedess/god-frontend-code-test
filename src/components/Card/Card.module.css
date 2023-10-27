@@ -1,0 +1,27 @@
+.card {
+  text-decoration: none !important;
+}
+
+.card:hover *,
+.card:focus * {
+  color: var(--primary);
+}
+
+.card img {
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card:hover img,
+.card:focus img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.modelType {
+  font-weight: normal;
+  color: var(--c2);
+}
