@@ -2,15 +2,20 @@ import React from "react";
 import { AppProps } from "next/app";
 import { StyleProvider, ThemePicker } from "vcc-ui";
 import "../public/css/styles.css";
+import { CarContextProvider } from "../src/context/CarContext";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <StyleProvider>
       <ThemePicker variant="dark">
         <React.StrictMode>
-          <Component {...pageProps} />
+          <CarContextProvider>
+            <Component {...pageProps} />
+          </CarContextProvider>
         </React.StrictMode>
       </ThemePicker>
     </StyleProvider>
   );
-}
+};
+
+export default MyApp;
