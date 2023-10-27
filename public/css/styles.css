@@ -18,3 +18,11 @@ img {
 ul {
   list-style: none;
 }
+
+:root {
+  --primary: #5381bb;
+  --c1: #3b3b3b;
+  --c2: #707070;
+  --c3: #d9d9d9;
+  --c4: #f7f7f7;
+}
