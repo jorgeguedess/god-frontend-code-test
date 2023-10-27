@@ -7,7 +7,7 @@ import { CarContextProvider } from "../src/context/CarContext";
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <StyleProvider>
-      <ThemePicker variant="dark">
+      <ThemePicker variant="light">
         <React.StrictMode>
           <CarContextProvider>
             <Component {...pageProps} />
